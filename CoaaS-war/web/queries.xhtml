@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="resources/js/vkbeautify.0.99.00.beta.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $('.xml').each(function () {
+                    var txt = $(this).val();
+                    vkbeautify.xml(txt);
+                    $(this).val(txt);
+                });
+            });
+        </script>
+        <style>
+
+            table tr td:first-child
+            {
+                width: 20px;
+            }
+            table tr td:nth-child(2)
+            {
+                width: 100px;
+            }
+            table tr td:nth-child(3)
+            {
+                width: 50px;
+            }
+            table tr td:nth-child(4)
+            {
+                width: 500px;
+            }
+            textArea
+            {
+                height: 300px;
+                width: 100%;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="List"/></h1>
+                <h:dataTable value="#{cDQLController.queries}" var="item">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Queryid"/>
+                        </f:facet>
+                        <h:outputText value="#{item.queryid}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Query"/>
+                        </f:facet>
+                        <h:outputText value="#{item.query}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Querystatus"/>
+                        </f:facet>
+                        <h:outputText value="#{item.querystatus}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Result"/>
+                        </f:facet>
+                        <h:inputTextarea id="test" class="xml" value="#{item.result}"/>
+                    </h:column>
+                </h:dataTable>
+            </h:form>
+        </f:view>
+
+
+
+    </h:body>
+</html>
+

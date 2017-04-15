@@ -1,0 +1,6 @@
+Pull p.* 
+Define Entities as
+Entity p from $location where p.type="car-park" 
+and Distance(p.location,this.nextEvent.location) < "500m" and
+p.maxDurationLimit => "2H" and p.Cost < "15$" and 
+p.Facilities contains "charging outlet" and p.maxHeight  >= car.height 

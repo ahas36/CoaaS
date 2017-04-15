@@ -1,0 +1,48 @@
+{
+  "name": "antlr4",
+  "version": "4.6.0",
+  "description": "JavaScript runtime for ANTLR4",
+  "main": "src/antlr4/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antlr/antlr4.git"
+  },
+  "keywords": [
+    "lexer",
+    "parser",
+    "antlr",
+    "antlr4",
+    "grammar"
+  ],
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/antlr/antlr4/issues"
+  },
+  "homepage": "https://github.com/antlr/antlr4",
+  "_id": "antlr4@4.6.0",
+  "scripts": {},
+  "_shasum": "0d7e8b4b4692ebf1d9470ae59cf627428bcc6dec",
+  "_from": "antlr4@latest",
+  "_resolved": "https://registry.npmjs.org/antlr4/-/antlr4-4.6.0.tgz",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "ericvergnaud",
+    "email": "eric.vergnaud@wanadoo.fr"
+  },
+  "dist": {
+    "shasum": "0d7e8b4b4692ebf1d9470ae59cf627428bcc6dec",
+    "tarball": "https://registry.npmjs.org/antlr4/-/antlr4-4.6.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "ericvergnaud",
+      "email": "eric.vergnaud@wanadoo.fr"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/antlr4-4.6.0.tgz_1481901306062_0.0803519724868238"
+  },
+  "directories": {}
+}
